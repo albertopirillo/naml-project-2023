@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn import preprocessing
-from typing import List
+from typing import List, Tuple
 
 def pre_processing(df: pd.DataFrame) -> pd.DataFrame:
     """ Drop unnecessary columns and set the correct datatypes"""
@@ -39,17 +39,20 @@ def plot_accuracies(labels: List[str], accuracies: float, title: str) -> None:
     
     
 def encode_labels(labels: np.array) -> np.array:
-    """ Encode the values of categorical variable into integer values """
+    """ One-hot encode the values of categorical variable into integer values """
     lb = preprocessing.LabelBinarizer()
     y = lb.fit_transform(labels)
     return y.astype(np.float32)
 
 
-def balance_classes(data: np.array, genre: int) -> np.array: 
+def balance_classes(data: np.array, labels: np.array, genre: str) -> Tuple[np.array, np.array]: 
     """ Balance the elements of the two classes in a binary classification problem"""
+    # Concatenate data and labels in a single matrix
+    dataset = np.concatenate((data, labels[:, np.newaxis]), axis=1)
+    
     # Split the data
-    class_data = data[data[:,-1] == genre]
-    other_data= data[data[:,-1] != genre]
+    class_data = dataset[dataset[:,-1] == genre]
+    other_data= dataset[dataset[:,-1] != genre]
     
     # Balance the classes
     idxs = np.random.choice(len(other_data), len(class_data))
@@ -65,5 +68,5 @@ def balance_classes(data: np.array, genre: int) -> np.array:
     y_new[y != genre] = 0
     y_new[y == genre] = 1
     
-    return X, y_new
+    return X.astype(np.float32), y_new.astype(np.float32)
     
