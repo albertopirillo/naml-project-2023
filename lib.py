@@ -27,7 +27,7 @@ def normalize_df(df: pd.DataFrame) -> pd.DataFrame:
 
 def plot_accuracies(labels: List[str], accuracies: List[float], title: str) -> None:
     """ Generate a bar plot where the height is the accuracy """
-    fig, ax = plt.subplots(figsize=(12,6))
+    _, ax = plt.subplots(figsize=(12,6))
     sns.barplot(x=labels, y=accuracies, width=0.6, palette="winter", ax=ax)
     ax.set_title(title)
     ax.set_yticks(np.arange(0, 101, 10))
@@ -74,8 +74,8 @@ def balance_classes(data: np.array, labels: np.array, genre: str, seed: int = No
 
 def plot_evaluation_results(df: pd.DataFrame, title: str) -> None:
     """ Generate a bar plot to display the results of model evaluation, either with static partitioning or CV """
-    fig, ax = plt.subplots(figsize=(16,12))
-    sns.barplot(data=df, x='label', y='accuracy', palette='deep', hue='size', width=0.6, ax=ax)
+    _, ax = plt.subplots(figsize=(16,6))
+    sns.barplot(data=df, x='label', y='accuracy', palette='muted', hue='size', width=0.6, ax=ax)
     ax.set_title(title)
     ax.set_yticks(np.arange(0, 101, 10))
     ax.set_ylabel("Accuracy")
