@@ -23,7 +23,6 @@ jobs:
         pip install pylint
         pip install mypy
 
-        
     - name: Analysing the code with pylint
       run: pylint --disable=C,R $(git ls-files '*.py')
         
