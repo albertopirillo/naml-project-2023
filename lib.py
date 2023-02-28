@@ -28,7 +28,7 @@ def normalize_df(df: pd.DataFrame) -> pd.DataFrame:
 
 def plot_accuracies(labels: List[str], accuracies: float, title: str) -> None:
     """ Generate a bar plot where the height is the accuracy """
-    fig, ax = plt.subplots(figsize=(12, 6))
+    _, ax = plt.subplots(figsize=(12, 6))
     sns.barplot(x=labels, y=accuracies, width=0.6, palette="winter", ax=ax)
     ax.set_title(title)
     ax.set_yticks(np.arange(0, 101, 10))
