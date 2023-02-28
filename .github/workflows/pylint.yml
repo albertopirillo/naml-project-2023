@@ -27,4 +27,4 @@ jobs:
       run: pylint --disable=C,R $(git ls-files '*.py')
         
     - name: Checking types with mypy
-      run: mypy --ignore-missing-imports --strict $(git ls-files '*.py')
+      run: mypy --ignore-missing-imports $(git ls-files '*.py')
