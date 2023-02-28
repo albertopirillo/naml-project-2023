@@ -2,7 +2,7 @@
     Library file that contains functions shared across all notebooks in the project.
 """
 
-from typing import List, Tuple
+from typing import List, Tuple, Any
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -39,14 +39,14 @@ def plot_accuracies(labels: List[str], accuracies: float, title: str) -> None:
     ax.grid(axis='y', color='gray')
 
 
-def encode_labels(labels: np.ndarray) -> np.ndarray:
+def encode_labels(labels: np.ndarray[Any]) -> np.ndarray[np.float32]:
     """ One-hot encode the values of categorical variable into integer values """
     lb = preprocessing.LabelBinarizer()
     y = lb.fit_transform(labels)
     return y.astype(np.float32)
 
 
-def balance_classes(data: np.ndarray, labels: np.ndarray, genre: str) -> Tuple[np.ndarray, np.ndarray]:
+def balance_classes(data: np.ndarray, labels: np.ndarray[Any], genre: str) -> Tuple[np.ndarray[np.float32], np.ndarray[np.float32]]:
     """ Balance the elements of the two classes in a binary classification problem"""
     # Concatenate data and labels in a single matrix
     dataset = np.concatenate((data, labels[:, np.newaxis]), axis=1)
