@@ -24,7 +24,7 @@ jobs:
 
         
     - name: Analysing the code with pylint
-      run: run pylint $(git ls-files '*.py')
+      run: pylint $(git ls-files '*.py')
         
     - name: Checking types with mypy
       run: mypy --strict $(git ls-files '*.py')
