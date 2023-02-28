@@ -25,7 +25,7 @@ def normalize_df(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def plot_accuracies(labels: List[str], accuracies: float, title: str) -> None:
+def plot_accuracies(labels: List[str], accuracies: List[float], title: str) -> None:
     """ Generate a bar plot where the height is the accuracy """
     fig, ax = plt.subplots(figsize=(12,6))
     sns.barplot(x=labels, y=accuracies, width=0.6, palette="winter", ax=ax)
@@ -45,7 +45,7 @@ def encode_labels(labels: np.array) -> np.array:
     return y.astype(np.float32)
 
 
-def balance_classes(data: np.array, labels: np.array, genre: str) -> Tuple[np.array, np.array]: 
+def balance_classes(data: np.array, labels: np.array, genre: str, seed: int = None) -> Tuple[np.array, np.array]: 
     """ Balance the elements of the two classes in a binary classification problem"""
     # Concatenate data and labels in a single matrix
     dataset = np.concatenate((data, labels[:, np.newaxis]), axis=1)
@@ -55,6 +55,7 @@ def balance_classes(data: np.array, labels: np.array, genre: str) -> Tuple[np.ar
     other_data= dataset[dataset[:,-1] != genre]
     
     # Balance the classes
+    np.random.seed(seed)
     idxs = np.random.choice(len(other_data), len(class_data))
     other_data = other_data[idxs]
     balanced_data = np.concatenate((class_data, other_data))
@@ -69,4 +70,17 @@ def balance_classes(data: np.array, labels: np.array, genre: str) -> Tuple[np.ar
     y_new[y == genre] = 1
     
     return X.astype(np.float32), y_new.astype(np.float32)
-    
+
+
+def plot_evaluation_results(df: pd.DataFrame, title: str) -> None:
+    """ Generate a bar plot to display the results of model evaluation, either with static partitioning or CV """
+    fig, ax = plt.subplots(figsize=(16,12))
+    sns.barplot(data=df, x='label', y='accuracy', palette='deep', hue='size', width=0.6, ax=ax)
+    ax.set_title(title)
+    ax.set_yticks(np.arange(0, 101, 10))
+    ax.set_ylabel("Accuracy")
+    ax.set_xlabel("Classifier")
+    ax.set_axisbelow(True)
+    ax.grid(axis='x', visible=False)
+    ax.grid(axis='y', color='gray')
+    ax.legend()
