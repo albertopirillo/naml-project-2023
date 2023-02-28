@@ -5,6 +5,7 @@
 from typing import List, Tuple, Any
 import pandas as pd
 import numpy as np
+import numpy.typing as npt
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn import preprocessing
@@ -39,15 +40,15 @@ def plot_accuracies(labels: List[str], accuracies: float, title: str) -> None:
     ax.grid(axis='y', color='gray')
 
 
-def encode_labels(labels: np.ndarray[Any, Any]) -> np.ndarray[Any, np.float32]:
+def encode_labels(labels: npt.NDArray[Any]) -> npt.NDArray[np.float32]:
     """ One-hot encode the values of categorical variable into integer values """
     lb = preprocessing.LabelBinarizer()
     y = lb.fit_transform(labels)
     return y.astype(np.float32)
 
 
-def balance_classes(data: np.ndarray[Any, Any], labels: np.ndarray[Any, Any], genre: str)\
-        -> Tuple[np.ndarray[Any, np.float32], np.ndarray[Any, np.float32]]:
+def balance_classes(data: npt.NDArray[Any], labels: npt.NDArray[Any], genre: str) \
+        -> Tuple[npt.NDArray[np.float32], npt.NDArray[np.float32]]:
     """ Balance the elements of the two classes in a binary classification problem"""
     # Concatenate data and labels in a single matrix
     dataset = np.concatenate((data, labels[:, np.newaxis]), axis=1)
