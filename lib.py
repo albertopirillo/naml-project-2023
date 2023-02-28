@@ -39,14 +39,14 @@ def plot_accuracies(labels: List[str], accuracies: float, title: str) -> None:
     ax.grid(axis='y', color='gray')
 
 
-def encode_labels(labels: np.array) -> np.array:
+def encode_labels(labels: np.ndarray) -> np.ndarray:
     """ One-hot encode the values of categorical variable into integer values """
     lb = preprocessing.LabelBinarizer()
     y = lb.fit_transform(labels)
     return y.astype(np.float32)
 
 
-def balance_classes(data: np.array, labels: np.array, genre: str) -> Tuple[np.array, np.array]:
+def balance_classes(data: np.ndarray, labels: np.ndarray, genre: str) -> Tuple[np.ndarray, np.ndarray]:
     """ Balance the elements of the two classes in a binary classification problem"""
     # Concatenate data and labels in a single matrix
     dataset = np.concatenate((data, labels[:, np.newaxis]), axis=1)
