@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn import preprocessing
+from sklearn import preprocessing, metrics
 from typing import List, Tuple
 
 def pre_processing(df: pd.DataFrame) -> pd.DataFrame:
@@ -84,3 +84,15 @@ def plot_evaluation_results(df: pd.DataFrame, title: str) -> None:
     ax.grid(axis='x', visible=False)
     ax.grid(axis='y', color='gray')
     ax.legend()
+    
+
+def plot_confusion_matrix(true_labels: np.array, pred_labels: np.array, class_labels: List[str]) -> None:
+    """ """
+    cm = metrics.confusion_matrix(true_labels, pred_labels)
+    _, ax = plt.subplots(figsize=(10, 10))
+    sns.heatmap(cm, annot=True, cbar=False, fmt="d", linewidths=2, square=True,
+                xticklabels=class_labels, yticklabels=class_labels, ax=ax)
+    plt.xlabel('True labels')
+    plt.ylabel('Predicted labels')
+    plt.show()
+
