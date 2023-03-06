@@ -72,9 +72,9 @@ def balance_classes(data: np.array, labels: np.array, genre: str, seed: int = No
     return X.astype(np.float32), y_new.astype(np.float32)
 
 
-def plot_evaluation_results(df: pd.DataFrame, title: str) -> None:
+def plot_evaluation_results(df: pd.DataFrame, title: str, figsize: Tuple[int, int] = (16,6)) -> None:
     """ Generate a bar plot to display the results of model evaluation, either with static partitioning or CV """
-    _, ax = plt.subplots(figsize=(16,6))
+    _, ax = plt.subplots(figsize=figsize)
     sns.barplot(data=df, x='label', y='accuracy', palette='muted', hue='size', width=0.6, ax=ax)
     ax.set_title(title)
     ax.set_yticks(np.arange(0, 101, 10))
@@ -87,7 +87,7 @@ def plot_evaluation_results(df: pd.DataFrame, title: str) -> None:
     
 
 def plot_confusion_matrix(true_labels: np.array, pred_labels: np.array, class_labels: List[str]) -> None:
-    """ """
+    """ Generate a heatmap plot of the confusion matrix associated to a prediction """
     cm = metrics.confusion_matrix(true_labels, pred_labels)
     _, ax = plt.subplots(figsize=(10, 10))
     sns.heatmap(cm, annot=True, cbar=False, fmt="d", linewidths=2, square=True,
