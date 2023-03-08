@@ -80,6 +80,6 @@ def plot_confusion_matrix(true_labels: np.ndarray, pred_labels: np.ndarray, clas
     _, ax = plt.subplots(figsize=(10, 10))
     sns.heatmap(cm, annot=True, cbar=False, fmt="d", linewidths=2, square=True,
                 xticklabels=class_labels, yticklabels=class_labels, ax=ax)
-    plt.xlabel('True labels')
-    plt.ylabel('Predicted labels')
-    plt.show()
+    ax.set_title('Multiclass Confusion Matrix')
+    ax.set_xlabel('True labels')
+    ax.set_ylabel('Predicted labels')
