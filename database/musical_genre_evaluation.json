@@ -1,0 +1,529 @@
+[{
+  "_id": {
+    "$oid": "64020fc1ba05684078d0ffad"
+  },
+  "genre": "blues",
+  "type": "train_validation_split",
+  "test_size": 0.1,
+  "validation_accuracy": 0.949999988079071
+},{
+  "_id": {
+    "$oid": "64020fcdba05684078d0ffae"
+  },
+  "genre": "classical",
+  "type": "train_validation_split",
+  "test_size": 0.1,
+  "validation_accuracy": 0.9850000143051147
+},{
+  "_id": {
+    "$oid": "64020fdfba05684078d0ffaf"
+  },
+  "genre": "country",
+  "type": "train_validation_split",
+  "test_size": 0.1,
+  "validation_accuracy": 0.9100000262260437
+},{
+  "_id": {
+    "$oid": "64020ffeba05684078d0ffb0"
+  },
+  "genre": "disco",
+  "type": "train_validation_split",
+  "test_size": 0.1,
+  "validation_accuracy": 0.949999988079071
+},{
+  "_id": {
+    "$oid": "6402101651c71ae325d59561"
+  },
+  "genre": "hiphop",
+  "type": "train_validation_split",
+  "test_size": 0.1,
+  "validation_accuracy": 0.8899999856948853
+},{
+  "_id": {
+    "$oid": "6402101d51c71ae325d59562"
+  },
+  "genre": "jazz",
+  "type": "train_validation_split",
+  "test_size": 0.1,
+  "validation_accuracy": 0.949999988079071
+},{
+  "_id": {
+    "$oid": "6402102b51c71ae325d59563"
+  },
+  "genre": "metal",
+  "type": "train_validation_split",
+  "test_size": 0.1,
+  "validation_accuracy": 0.9800000190734863
+},{
+  "_id": {
+    "$oid": "6402103051c71ae325d59564"
+  },
+  "genre": "pop",
+  "type": "train_validation_split",
+  "test_size": 0.1,
+  "validation_accuracy": 0.9399999976158142
+},{
+  "_id": {
+    "$oid": "6402104051c71ae325d59565"
+  },
+  "genre": "reggae",
+  "type": "train_validation_split",
+  "test_size": 0.1,
+  "validation_accuracy": 0.949999988079071
+},{
+  "_id": {
+    "$oid": "6402104a51c71ae325d59566"
+  },
+  "genre": "rock",
+  "type": "train_validation_split",
+  "test_size": 0.1,
+  "validation_accuracy": 0.9150000214576721
+},{
+  "_id": {
+    "$oid": "6402105f51c71ae325d59567"
+  },
+  "genre": "blues",
+  "type": "train_validation_split",
+  "test_size": 0.25,
+  "validation_accuracy": 0.9419999718666077
+},{
+  "_id": {
+    "$oid": "6402108051c71ae325d59568"
+  },
+  "genre": "classical",
+  "type": "train_validation_split",
+  "test_size": 0.25,
+  "validation_accuracy": 0.9799599051475525
+},{
+  "_id": {
+    "$oid": "6402108a51c71ae325d59569"
+  },
+  "genre": "country",
+  "type": "train_validation_split",
+  "test_size": 0.25,
+  "validation_accuracy": 0.9078156352043152
+},{
+  "_id": {
+    "$oid": "640210a851c71ae325d5956a"
+  },
+  "genre": "disco",
+  "type": "train_validation_split",
+  "test_size": 0.25,
+  "validation_accuracy": 0.9179999828338623
+},{
+  "_id": {
+    "$oid": "640210b851c71ae325d5956b"
+  },
+  "genre": "hiphop",
+  "type": "train_validation_split",
+  "test_size": 0.25,
+  "validation_accuracy": 0.9418837428092957
+},{
+  "_id": {
+    "$oid": "640210c551c71ae325d5956c"
+  },
+  "genre": "jazz",
+  "type": "train_validation_split",
+  "test_size": 0.25,
+  "validation_accuracy": 0.9300000071525574
+},{
+  "_id": {
+    "$oid": "640210d051c71ae325d5956d"
+  },
+  "genre": "metal",
+  "type": "train_validation_split",
+  "test_size": 0.25,
+  "validation_accuracy": 0.949999988079071
+},{
+  "_id": {
+    "$oid": "640210d451c71ae325d5956e"
+  },
+  "genre": "pop",
+  "type": "train_validation_split",
+  "test_size": 0.25,
+  "validation_accuracy": 0.9359999895095825
+},{
+  "_id": {
+    "$oid": "640210df51c71ae325d5956f"
+  },
+  "genre": "reggae",
+  "type": "train_validation_split",
+  "test_size": 0.25,
+  "validation_accuracy": 0.9419999718666077
+},{
+  "_id": {
+    "$oid": "6402110a51c71ae325d59571"
+  },
+  "genre": "blues",
+  "type": "train_validation_split",
+  "test_size": 0.33,
+  "validation_accuracy": 0.9515151381492615
+},{
+  "_id": {
+    "$oid": "6402111551c71ae325d59572"
+  },
+  "genre": "classical",
+  "type": "train_validation_split",
+  "test_size": 0.33,
+  "validation_accuracy": 0.9863429665565491
+},{
+  "_id": {
+    "$oid": "6402111f51c71ae325d59573"
+  },
+  "genre": "country",
+  "type": "train_validation_split",
+  "test_size": 0.33,
+  "validation_accuracy": 0.9226100444793701
+},{
+  "_id": {
+    "$oid": "6402113c51c71ae325d59574"
+  },
+  "genre": "disco",
+  "type": "train_validation_split",
+  "test_size": 0.33,
+  "validation_accuracy": 0.9090909361839294
+},{
+  "_id": {
+    "$oid": "6402114a51c71ae325d59575"
+  },
+  "genre": "hiphop",
+  "type": "train_validation_split",
+  "test_size": 0.33,
+  "validation_accuracy": 0.9165402054786682
+},{
+  "_id": {
+    "$oid": "6402115251c71ae325d59576"
+  },
+  "genre": "jazz",
+  "type": "train_validation_split",
+  "test_size": 0.33,
+  "validation_accuracy": 0.9106060862541199
+},{
+  "_id": {
+    "$oid": "6402115f51c71ae325d59577"
+  },
+  "genre": "metal",
+  "type": "train_validation_split",
+  "test_size": 0.33,
+  "validation_accuracy": 0.9590908885002136
+},{
+  "_id": {
+    "$oid": "6402116451c71ae325d59578"
+  },
+  "genre": "pop",
+  "type": "train_validation_split",
+  "test_size": 0.33,
+  "validation_accuracy": 0.9363636374473572
+},{
+  "_id": {
+    "$oid": "6402116d51c71ae325d59579"
+  },
+  "genre": "reggae",
+  "type": "train_validation_split",
+  "test_size": 0.33,
+  "validation_accuracy": 0.9136363863945007
+},{
+  "_id": {
+    "$oid": "64021b61762a56eeb1f006c8"
+  },
+  "genre": "blues",
+  "type": "cross-validation",
+  "fold": 5,
+  "validation_accuracy": 0.9394999980926514
+},{
+  "_id": {
+    "$oid": "64021bd9762a56eeb1f006c9"
+  },
+  "genre": "classical",
+  "type": "cross-validation",
+  "fold": 5,
+  "validation_accuracy": 0.9769511342048645
+},{
+  "_id": {
+    "$oid": "64021c12762a56eeb1f006ca"
+  },
+  "genre": "country",
+  "type": "cross-validation",
+  "fold": 5,
+  "validation_accuracy": 0.9177516579627991
+},{
+  "_id": {
+    "$oid": "64021ce1762a56eeb1f006cb"
+  },
+  "genre": "disco",
+  "type": "cross-validation",
+  "fold": 5,
+  "validation_accuracy": 0.9144210577011108
+},{
+  "_id": {
+    "$oid": "64021d43762a56eeb1f006cc"
+  },
+  "genre": "hiphop",
+  "type": "cross-validation",
+  "fold": 5,
+  "validation_accuracy": 0.9248458623886109
+},{
+  "_id": {
+    "$oid": "64021d6a762a56eeb1f006cd"
+  },
+  "genre": "jazz",
+  "type": "cross-validation",
+  "fold": 5,
+  "validation_accuracy": 0.9340000033378602
+},{
+  "_id": {
+    "$oid": "64021dc2762a56eeb1f006ce"
+  },
+  "genre": "metal",
+  "type": "cross-validation",
+  "fold": 5,
+  "validation_accuracy": 0.9614999771118165
+},{
+  "_id": {
+    "$oid": "64021e0a762a56eeb1f006cf"
+  },
+  "genre": "pop",
+  "type": "cross-validation",
+  "fold": 5,
+  "validation_accuracy": 0.9490000009536743
+},{
+  "_id": {
+    "$oid": "64021e59762a56eeb1f006d0"
+  },
+  "genre": "reggae",
+  "type": "cross-validation",
+  "fold": 5,
+  "validation_accuracy": 0.9190000057220459
+},{
+  "_id": {
+    "$oid": "640335730ab57ba0b0ee660d"
+  },
+  "genre": "blues",
+  "type": "cross-validation",
+  "fold": 10,
+  "validation_accuracy": 0.9394999921321869
+},{
+  "_id": {
+    "$oid": "6403363b0ab57ba0b0ee660e"
+  },
+  "genre": "classical",
+  "type": "cross-validation",
+  "fold": 10,
+  "validation_accuracy": 0.9784447312355041
+},{
+  "_id": {
+    "$oid": "640337050ab57ba0b0ee660f"
+  },
+  "genre": "country",
+  "type": "cross-validation",
+  "fold": 10,
+  "validation_accuracy": 0.9207512497901916
+},{
+  "_id": {
+    "$oid": "640339620ab57ba0b0ee6610"
+  },
+  "genre": "disco",
+  "type": "cross-validation",
+  "fold": 10,
+  "validation_accuracy": 0.929424625635147
+},{
+  "_id": {
+    "$oid": "64033a670ab57ba0b0ee6611"
+  },
+  "genre": "hiphop",
+  "type": "cross-validation",
+  "fold": 10,
+  "validation_accuracy": 0.9253467440605163
+},{
+  "_id": {
+    "$oid": "64033ac20ab57ba0b0ee6612"
+  },
+  "genre": "jazz",
+  "type": "cross-validation",
+  "fold": 10,
+  "validation_accuracy": 0.9425000011920929
+},{
+  "_id": {
+    "$oid": "64033bbb0ab57ba0b0ee6613"
+  },
+  "genre": "metal",
+  "type": "cross-validation",
+  "fold": 10,
+  "validation_accuracy": 0.9664999961853027
+},{
+  "_id": {
+    "$oid": "64033c220ab57ba0b0ee6614"
+  },
+  "genre": "pop",
+  "type": "cross-validation",
+  "fold": 10,
+  "validation_accuracy": 0.9404999911785126
+},{
+  "_id": {
+    "$oid": "64033cd80ab57ba0b0ee6615"
+  },
+  "genre": "reggae",
+  "type": "cross-validation",
+  "fold": 10,
+  "validation_accuracy": 0.9334999978542328
+},{
+  "_id": {
+    "$oid": "64034ef20ab57ba0b0ee6617"
+  },
+  "genre": "multiclass",
+  "type": "cross-validation",
+  "fold": 20,
+  "validation_accuracy": 0.9215222507715225
+},{
+  "_id": {
+    "$oid": "640351870ab57ba0b0ee6618"
+  },
+  "genre": "blues",
+  "type": "cross-validation",
+  "fold": 20,
+  "validation_accuracy": 0.948500007390976
+},{
+  "_id": {
+    "$oid": "640352970ab57ba0b0ee6619"
+  },
+  "genre": "classical",
+  "type": "cross-validation",
+  "fold": 20,
+  "validation_accuracy": 0.9829798072576523
+},{
+  "_id": {
+    "$oid": "640353640ab57ba0b0ee661a"
+  },
+  "genre": "country",
+  "type": "cross-validation",
+  "fold": 20,
+  "validation_accuracy": 0.9263181865215302
+},{
+  "_id": {
+    "$oid": "64035ac5ea6b62a38bbc6db3"
+  },
+  "genre": "disco",
+  "type": "cross-validation",
+  "fold": 20,
+  "validation_accuracy": 0.9269141405820847
+},{
+  "_id": {
+    "$oid": "64035c01ea6b62a38bbc6db4"
+  },
+  "genre": "hiphop",
+  "type": "cross-validation",
+  "fold": 20,
+  "validation_accuracy": 0.9298181891441345
+},{
+  "_id": {
+    "$oid": "64035cabea6b62a38bbc6db5"
+  },
+  "genre": "jazz",
+  "type": "cross-validation",
+  "fold": 20,
+  "validation_accuracy": 0.9334999978542328
+},{
+  "_id": {
+    "$oid": "64035ddeea6b62a38bbc6db6"
+  },
+  "genre": "metal",
+  "type": "cross-validation",
+  "fold": 20,
+  "validation_accuracy": 0.9735000103712081
+},{
+  "_id": {
+    "$oid": "64035e4fea6b62a38bbc6db7"
+  },
+  "genre": "pop",
+  "type": "cross-validation",
+  "fold": 20,
+  "validation_accuracy": 0.939000004529953
+},{
+  "_id": {
+    "$oid": "64035f20ea6b62a38bbc6db8"
+  },
+  "genre": "reggae",
+  "type": "cross-validation",
+  "fold": 20,
+  "validation_accuracy": 0.9320000022649765
+},{
+  "_id": {
+    "$oid": "6405bb7855805231ab35b5a0"
+  },
+  "genre": "multiclass",
+  "type": "train_validation_split",
+  "test_size": 0.1,
+  "validation_accuracy": 0.923923909664154
+},{
+  "_id": {
+    "$oid": "6405bc1455805231ab35b5a1"
+  },
+  "genre": "multiclass",
+  "type": "train_validation_split",
+  "test_size": 0.25,
+  "validation_accuracy": 0.902722179889679
+},{
+  "_id": {
+    "$oid": "6405bc1e55805231ab35b5a2"
+  },
+  "genre": "rock",
+  "type": "train_validation_split",
+  "test_size": 0.25,
+  "validation_accuracy": 0.9038076400756836
+},{
+  "_id": {
+    "$oid": "6405bca355805231ab35b5a3"
+  },
+  "genre": "multiclass",
+  "type": "train_validation_split",
+  "test_size": 0.33,
+  "validation_accuracy": 0.8914164304733276
+},{
+  "_id": {
+    "$oid": "6405bcad55805231ab35b5a4"
+  },
+  "genre": "rock",
+  "type": "train_validation_split",
+  "test_size": 0.33,
+  "validation_accuracy": 0.9013656973838806
+},{
+  "_id": {
+    "$oid": "6405c01955805231ab35b5a5"
+  },
+  "genre": "multiclass",
+  "type": "cross-validation",
+  "fold": 5,
+  "validation_accuracy": 0.9119119048118591
+},{
+  "_id": {
+    "$oid": "6405c04d55805231ab35b5a6"
+  },
+  "genre": "rock",
+  "type": "cross-validation",
+  "fold": 5,
+  "validation_accuracy": 0.8837669134140015
+},{
+  "_id": {
+    "$oid": "6405c72855805231ab35b5a7"
+  },
+  "genre": "multiclass",
+  "type": "cross-validation",
+  "fold": 10,
+  "validation_accuracy": 0.9193193078041076
+},{
+  "_id": {
+    "$oid": "6405c7a255805231ab35b5a8"
+  },
+  "genre": "rock",
+  "type": "cross-validation",
+  "fold": 10,
+  "validation_accuracy": 0.9002864301204682
+},{
+  "_id": {
+    "$oid": "6405c87c55805231ab35b5a9"
+  },
+  "genre": "rock",
+  "type": "cross-validation",
+  "fold": 20,
+  "validation_accuracy": 0.8962727278470993
+}]
