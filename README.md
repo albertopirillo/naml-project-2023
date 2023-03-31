@@ -43,7 +43,9 @@ In this analysis, the file `features_3_sec.csv` available in the dataset was con
 The correlation of the input features w.r.t. the target variable was computed using the [Predictive Power Score](https://github.com/8080labs/ppscore/tree/1.1.2).
 
 To visualize the data and understand its structure, Principal Component Analysis (PCA) was used, computed through Singular Value Decomposition (SVD).
-Both a 2D and a 3D scatter plot were generated.
+The following chart shows a scatter plot of the first two principal components of the samples in the dataset.
+
+![comparison](report/source/Figures/pca_2d.png)
 
 
 ## ML models
