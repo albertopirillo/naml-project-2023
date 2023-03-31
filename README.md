@@ -60,6 +60,10 @@ This was in order to easily filter and aggregate those results.
 
 Then, also this model was evaluated using static partitioning and dynamic partitioning, to allow for a fair comparison with ML models.
          
+## Performance comparison
+The following chart shows a comparison of the accuracy of all the models considered in the project, both in the multi-class case and in the binary cases. The results were produced by evaluating all the models using 20-fold cross-validation.
+
+![comparison](report/source/Figures/comparison.png)
 
 ## Software
 - [Scikit-learn](https://scikit-learn.org/stable/index.html)
